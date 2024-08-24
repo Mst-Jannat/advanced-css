@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+header{
+    grid-column:1/7;
+    background:red;
+    height:10vh;
+}
+
+nav{
+    grid-column:1/2;
+    background:#cf8080;
+}
+
+main{
+    grid-column:2/5;
+    height:80vh;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.product{
+    background:antiquewhite;
+    padding:0.5rem;
+}
+
+aside{
+    grid-column:5/7 ;
+    background:green;
+}
+
+footer{
+    grid-column:1/7;
+    background:blueviolet;
+    height:10vh;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    main, aside, nav{grid-column:1/7;}
+}
